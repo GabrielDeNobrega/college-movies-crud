@@ -14,16 +14,16 @@ public class Movie {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private String gender;
+	private String genre;
 	private Integer release;
 
 	public Movie() {
 	}
 
-	public Movie(Long id, String name, String gender, Integer release) {
+	public Movie(Long id, String name, String genre, Integer release) {
 		this.id = id;
 		this.name = name;
-		this.gender = gender;
+		this.genre = genre;
 		this.release = release;
 	}
 
@@ -43,12 +43,12 @@ public class Movie {
 		this.name = name;
 	}
 
-	public String getGender() {
-		return gender;
+	public String getGenre() {
+		return genre;
 	}
 
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 
 	public Integer getRelease() {

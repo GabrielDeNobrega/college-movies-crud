@@ -41,7 +41,7 @@ public class MovieService {
 		MovieDTO movieDTO = new MovieDTO();
 		movieDTO.setId(movie.getId());
 		movieDTO.setName(movie.getName());
-		movieDTO.setGender(movie.getGender());
+		movieDTO.setGenre(movie.getGenre());
 		movieDTO.setRelease(movie.getRelease());
 
 		return movieDTO;
