@@ -1,5 +1,5 @@
 <h1 align="center">
-  🍃 Página da Web - Currículo 🍃
+  🍃 Página da Web - CRUD de Filmes 🍃
 </h1>
   
 <p align="center" width="100%">
@@ -14,5 +14,5 @@
 </h1>
   
 <h3>
-  Repositório criado para o versionamento do projeto da disciplica de Desenvolvimento de Sistemas Web.
+  Repositório criado para o versionamento do projeto da disciplina de Desenvolvimento de Sistemas Web.
 </h3>
