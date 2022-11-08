@@ -3,13 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import "./form.css";
 
 function Form() {
-
   const navigate = useNavigate();
 
   const submitHandler = (event: React.FormEvent) => {
-    event.preventDefault()
-    navigate("/main")
-  }
+    event.preventDefault();
+    navigate("/main");
+  };
 
   return (
     <div className="form">
@@ -23,17 +22,21 @@ function Form() {
         <label htmlFor="genre">Gênero</label>
         <input id="genre" placeholder="Digite o gênero do filme!" type="text" />
         <label htmlFor="release">Lançamento</label>
-        <input id="release" placeholder="Digite o ano de lançamento do filme!" type="text" />
+        <input
+          id="release"
+          placeholder="Digite o ano de lançamento!"
+          type="text"
+        />
 
         <div className="buttons-of-the-form">
           <Link className="form-buttons-return" to="/main">
             Cancelar
           </Link>
-          <button className="form-buttons-send" onClick={submitHandler}>Enviar</button>
-
+          <button className="form-buttons-send" onClick={submitHandler}>
+            Enviar
+          </button>
         </div>
       </form>
-
     </div>
   );
 }
