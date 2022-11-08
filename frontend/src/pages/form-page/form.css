@@ -28,17 +28,44 @@
   text-shadow: 1px 1px var(--black);
 }
 
-.buttons-of-the-form {
+.form-indeed {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: baseline;
+  margin: 30px 40px;
 }
 
-.form-buttons {
+.form-indeed label {
+  color: var(--dark-green);
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px var(--black);
+}
+
+.form-indeed input {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
+  margin: 4px 20px 20px -8px;
+  min-height: 60px;
+  border-radius: 12px;
+  width: 100%;
+  background-color: var(--light-green);
+  border: 5px solid var(--black);
+  color: var(--dark-green);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.buttons-of-the-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-buttons-return {
   border: 5px solid var(--black);
   border-radius: 20px;
   margin: 10px 10px;
@@ -49,23 +76,38 @@
   font-weight: 800;
   text-decoration: none;
   text-shadow: 1px 1px var(--black);
-  min-width: 300px;
-  max-width: 400px;
+  color: var(--dark-green);
+  width: 270px;
 }
 
-.form-buttons:link {
+.form-buttons-send {
+  border: 5px solid var(--black);
+  border-radius: 20px;
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: var(--light-green);
+  align-items: center;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  text-shadow: 1px 1px var(--black);
+  color: var(--dark-green);
+  width: 302px;
+}
+
+.form-buttons-return:visited, .form-buttons-send:visited {
   color: var(--dark-green);
 }
 
-.form-buttons:active {
+.form-buttons-return:hover, .form-buttons-send:hover {
+  box-shadow: 15px 10px 8px -1px rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-buttons-return:active, .form-buttons-send:active {
   color: var(--medium-green);
 }
 
-.form-buttons:visited {
+.form-buttons-return:link, .form-buttons-send:link {
   color: var(--dark-green);
-}
-
-.form-buttons:hover {
-  box-shadow: 15px 10px 8px -1px rgba(0, 0, 0, 0.8);
-  transition: box-shadow 0.3s ease-in-out;
 }

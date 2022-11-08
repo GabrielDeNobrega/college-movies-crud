@@ -85,14 +85,6 @@
   text-shadow: 1px 1px var(--black);
 }
 
-.button-to-main:link {
-  color: var(--dark-green);
-}
-
-.button-to-main:active {
-  color: var(--medium-green);
-}
-
 .button-to-main:visited {
   color: var(--dark-green);
 }
@@ -100,4 +92,12 @@
 .button-to-main:hover {
   box-shadow: 15px 10px 8px -1px rgba(0, 0, 0, 0.8);
   transition: box-shadow 0.3s ease-in-out;
+}
+
+.button-to-main:active {
+  color: var(--medium-green);
+}
+
+.button-to-main:link {
+  color: var(--dark-green);
 }

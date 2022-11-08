@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MovieList } from "../../types/movie";
+import { Movie } from "../../types/movie";
 import "./main-page.css";
 
-type MoviesInformationProps = {
-  movies: MovieList | undefined;
+type MovieInformationProps = {
+  movie: Array<Movie> | undefined;
 };
 
-function MainPage({ movies }: MoviesInformationProps) {
+function MainPage({ movie }: MovieInformationProps) {
   return (
     <div className="main-page">
       <Link className="main-page-buttons" to="/">
@@ -36,7 +36,7 @@ function MainPage({ movies }: MoviesInformationProps) {
             </tr>
           </thead>
           <tbody>
-            {movies?.movies.map((movie) => (
+            {movie?.map((movie) => (
               <tr key={movie.id}>
                 <td>
                   <div className="movies-single-item">

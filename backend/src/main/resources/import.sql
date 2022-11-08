@@ -5,3 +5,4 @@ INSERT INTO movies (name, genre, release) VALUES ('The Dark Knight', 'Action', 2
 INSERT INTO movies (name, genre, release) VALUES ('Parasite', 'Thriller', 2019)
 INSERT INTO movies (name, genre, release) VALUES ('12 Years a Slave', 'Drama', 2019)
 INSERT INTO movies (name, genre, release) VALUES ('Saving Private Ryan', 'Drama', 1998)
+INSERT INTO movies (name, genre, release) VALUES ('Harry Potter: A Ordem da Fênix', 'Drama', 1998)
