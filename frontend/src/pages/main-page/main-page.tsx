@@ -1,13 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 import { Movie } from "../../types/movie";
+import { BASE_URL } from "../../utils/requests";
 import "./main-page.css";
 
-type MovieInformationProps = {
-  movie: Array<Movie> | undefined;
-};
+function MainPage() {
+  const [movie, setMovie] = useState<Array<Movie>>();
+  const param = useParams();
+  useEffect(() => {
+    axios.get(`${BASE_URL}/movies`).then((response) => {
+      setMovie(response.data);
+    });
+  }, [param.id]);
 
-function MainPage({ movie }: MovieInformationProps) {
   return (
     <div className="main-page">
       <Link className="main-page-buttons" to="/">

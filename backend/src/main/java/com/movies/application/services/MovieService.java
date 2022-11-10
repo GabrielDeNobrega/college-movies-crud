@@ -53,10 +53,6 @@ public class MovieService {
 			}
 		}
 
-		if (movieDTO.getName().equals("") || movieDTO.getGenre().equals("")) {
-			return new ResponseEntity<>("The movie's name and genre can't be empty.", HttpStatus.BAD_REQUEST);
-		}
-
 		if (movieDTO.getName() == null) {
 			return new ResponseEntity<>("The movie's name can't be null.", HttpStatus.BAD_REQUEST);
 
@@ -65,6 +61,10 @@ public class MovieService {
 		if (movieDTO.getGenre() == null) {
 			return new ResponseEntity<>("The movie's genre can't be null.", HttpStatus.BAD_REQUEST);
 
+		}
+		
+		if (movieDTO.getName().equals("") || movieDTO.getGenre().equals("")) {
+			return new ResponseEntity<>("The movie's name and genre can't be empty.", HttpStatus.BAD_REQUEST);
 		}
 
 		if (movieDTO.getRelease() == null) {
