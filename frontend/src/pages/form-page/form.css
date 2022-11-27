@@ -4,6 +4,7 @@
   --light-green: #a2f9ab;
   --black: #000000;
   --white: #ffffff;
+  --wine-red: #980202;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
@@ -95,19 +96,28 @@
   width: 302px;
 }
 
-.form-buttons-return:visited, .form-buttons-send:visited {
+.form-buttons-return:visited,
+.form-buttons-send:visited {
   color: var(--dark-green);
 }
 
-.form-buttons-return:hover, .form-buttons-send:hover {
+.form-buttons-return:hover,
+.form-buttons-send:hover {
   box-shadow: 15px 10px 8px -1px rgba(0, 0, 0, 0.8);
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.form-buttons-return:active, .form-buttons-send:active {
+.form-buttons-return:active,
+.form-buttons-send:active {
   color: var(--medium-green);
 }
 
-.form-buttons-return:link, .form-buttons-send:link {
+.form-buttons-return:link,
+.form-buttons-send:link {
   color: var(--dark-green);
+}
+
+.error-input {
+  color: var(--wine-red);
+  font-size: 20px;
 }

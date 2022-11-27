@@ -1,1 +1,0 @@
-INSERT INTO movies (name, genre, release) VALUES ('The First Man', 'Drama', 2019)
